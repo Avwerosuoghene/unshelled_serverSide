@@ -1,0 +1,43 @@
+{
+  "name": "unshelled-orders-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "NODE_ENV=prod ts-node-dev src/index.ts",
+    "build": "npx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/config": "^3.3.4",
+    "@types/dotenv": "^8.2.0",
+    "@types/morgan": "^1.9.9",
+    "@types/supertest": "^6.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/connect-mongodb-session": "^2.4.4",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.14",
+    "@types/express-session": "^1.17.5",
+    "@types/express-validator": "^3.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.19.42",
+    "@types/nodemon": "^1.19.2",
+    "jest": "^29.4.3",
+    "nodemon": "^2.0.20",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}
