@@ -58,7 +58,6 @@ export class Seller implements SellerI {
 
       } else {
         message = 'Seller not found or no changes made';
-        console.log(message);
       }
       return { updated: false, message };
     } catch (err) {

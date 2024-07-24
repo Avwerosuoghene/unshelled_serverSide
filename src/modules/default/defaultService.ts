@@ -116,6 +116,33 @@ export class DefaultService {
     }
   };
 
+
+
+
+
+  static async getOrdersById(orderId: string): Promise<{ message: string, isSuccess: boolean, data: any }> {
+ 
+      if (!orderId) {
+        const error = new ModError("Order Id is required");
+        error.statusCode = 400;
+        throw error;
+      }
+      const order = await Order.findById(orderId);
+
+      if (!order) {
+        const error = new ModError("Order not found");
+        error.statusCode = 404;
+        throw error;
+      }
+      return {
+        message: "Seller info updated succesfully",
+        isSuccess: true,
+        data: order
+      }
+  
+}
+
+
   static async deleteOrderById(orderId: string): Promise<{ message: string, isSuccess: boolean }> {
  
       if (!orderId) {

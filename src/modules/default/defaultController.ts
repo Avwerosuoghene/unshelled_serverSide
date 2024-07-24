@@ -54,4 +54,19 @@ export class DefaultController {
       next(err);
     }
   }
+
+  static async getOrdersById(req: Request, res: Response, next: NextFunction) {
+
+    try {
+      const orderId = req.params.id as string;
+
+      const { message, data } = await DefaultService.getOrdersById(orderId);
+      return succesHandler(res, 200, message, true, data)
+    } catch (err: any) {
+      if (!err.statusCode) {
+        err.statusCode = 500;
+      }
+      next(err);
+    }
+  }
 }

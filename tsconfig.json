@@ -3,13 +3,14 @@
     "typeRoots": ["./src/database/types"],
     "target": "ES6",
     "module": "commonjs",
-    "rootDir": "./src",
+    "rootDir": "./",
+    "removeComments": true,
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-
+    "moduleResolution": "node",
     "strict": true,
     "skipLibCheck": true,
-    "types": ["jest"]
-  }
+  },
+  "exclude": ["node_modules", "dist"]
 }

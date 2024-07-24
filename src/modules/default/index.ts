@@ -30,6 +30,11 @@ router.delete(
   DefaultController.deleteOrderById
 );
 
+router.get(
+  "/order_items/:id",
+  DefaultController.getOrdersById
+);
+
 export default (app: Application) => {
 
   app.use(apiVersion, router);
