@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { ValidationError, validationResult } from "express-validator";
+import {  validationResult } from "express-validator";
 import { ModError } from "../database/types/handlers";
 
 const validationHandler = (req: Request, res: Response, next: NextFunction) => {

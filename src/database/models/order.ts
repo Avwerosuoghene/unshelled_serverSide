@@ -1,6 +1,6 @@
 import { SortDirection } from "mongodb";
 import { getDb } from "../db";
-import { OrderI, SellerI } from "../types/models";
+import { OrderI } from "../types/models";
 import { GetOrdersRequestPayload } from "../types/payloads";
 
 
